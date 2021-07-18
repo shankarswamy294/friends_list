@@ -5,15 +5,15 @@ import { toast } from 'react-toastify';
 // local imports
 import FriendsData from '../../config/dummyFriends.json';
 import { PAGE_SIZE } from '../../contants';
+import GenericModal from '../GenericModal';
+import Pagination from '../Pagination';
+import AddModal from '../AddModal';
 
 // media imports
 import deleteIcon from '../../media/icons/delete.png';
 import fav from '../../media/icons/fav.png';
 import fav_selected from '../../media/icons/fav_selected.png';
 import addFriend from '../../media/icons/addFriend.png';
-import GenericModal from '../GenericModal';
-import Pagination from '../Pagination';
-import AddModal from '../AddModal';
 
 const FriendsList = () => {
     const [activePage, setActivePage] = useState(1);
